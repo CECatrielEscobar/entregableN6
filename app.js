@@ -103,6 +103,7 @@ class ProductManager {
         `${this.path}Productos.json`,
         "utf-8"
       );
+      console.log(variableString);
       const datosParseados = JSON.parse(variableString);
       return datosParseados;
     } catch (error) {
@@ -220,16 +221,16 @@ async function deleteProductAsync(instancia, id) {
   }
 }
 
-addProductAsync(producto, "producto1", "martillo", 500, "./img", "bc540", 25);
-addProductAsync(producto, "producto2", "moladora", 500, "./img", "bc545", 25);
-addProductAsync(producto, "producto3", "pala", 300, "./img", "ccc22", 15);
-addProductAsync(producto, "producto4", "destor", 500, "./img", "bc543", 25);
-addProductAsync(producto, "producto5", "pincel", 500, "./img", "bc542", 25);
-addProductAsync(producto, "producto6", "serrucho", 300, "./img", "ccc22", 15);
-addProductAsync(producto, "producto7", "pinza", 500, "./img", "bc540", 25);
-addProductAsync(producto, "producto8", "carretilla", 500, "./img", "bc541", 25);
-addProductAsync(producto, "producto9", "pintura", 300, "./img", "ccc223", 15);
-addProductAsync(producto, "producto10", "cinta", 300, "./img", "ccc224", 15);
+// addProductAsync(producto, "producto1", "martillo", 500, "./img", "bc540", 25);
+// addProductAsync(producto, "producto2", "moladora", 500, "./img", "bc545", 25);
+// addProductAsync(producto, "producto3", "pala", 300, "./img", "ccc22", 15);
+// addProductAsync(producto, "producto4", "destor", 500, "./img", "bc543", 25);
+// addProductAsync(producto, "producto5", "pincel", 500, "./img", "bc542", 25);
+// addProductAsync(producto, "producto6", "serrucho", 300, "./img", "ccc22", 15);
+// addProductAsync(producto, "producto7", "pinza", 500, "./img", "bc540", 25);
+// addProductAsync(producto, "producto8", "carretilla", 500, "./img", "bc541", 25);
+// addProductAsync(producto, "producto9", "pintura", 300, "./img", "ccc223", 15);
+// addProductAsync(producto, "producto10", "cinta", 300, "./img", "ccc224", 15);
 
 // [[ PARA PROBAR EL FUNCIONAMIENTO ]]
 // getProductAsync(producto);
@@ -265,3 +266,5 @@ addProductAsync(producto, "producto10", "cinta", 300, "./img", "ccc224", 15);
 
 // (comprobacion enviando el id vacio)
 // deleteProductAsync(producto,"")
+
+module.exports = producto;
